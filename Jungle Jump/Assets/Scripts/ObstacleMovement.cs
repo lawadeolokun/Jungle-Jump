@@ -4,30 +4,21 @@ using UnityEngine;
 
 public class ObstacleMovement : MonoBehaviour
 {
-    private float speed;
-    private Vector3 direction;
+    private float speed = 0.5f;
+    private Transform player;
 
-    // Set the speed at which the obstacle moves
-    public void SetSpeed(float newSpeed)
-    {
-        speed = newSpeed;
-    }
-
-    // Set the direction in which the obstacle should move
-    public void SetDirection(Vector3 newDirection)
-    {
-        direction = newDirection;
-    }
+    void Start()
+	{
+		player = GameObject.FindGameObjectWithTag("Player").transform;
+	}
 
     void Update()
     {
-        // Move the obstacle in the set direction
-        transform.position += direction * speed * Time.deltaTime;
-
-        // Optional: Destroy the obstacle if it goes beyond a certain distance
-        if (Vector3.Distance(transform.position, Camera.main.transform.position) > 100f)
-        {
-            Destroy(gameObject);
-        }
+	   // Move the obstacle towards the player's position
+	   if (player != null)
+	   {
+	      Vector3 direction = (player.position - transform.position).normalized;
+	      transform.Translate(direction * speed * Time.deltaTime, Space.World);
+	   }
     }
 }
