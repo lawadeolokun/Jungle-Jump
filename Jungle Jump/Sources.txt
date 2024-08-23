@@ -11,3 +11,10 @@ Assets
 
 6. VladislavTsurikov (Jungle/Forest Map) - Mega World [Free] - https://assetstore.unity.com/packages/tools/terrain/mega-world-free-207301 - Unchanged
 
+
+Scripts - References
+1. Quaternion.LookRotation - helps the obstacle rotate and move in the direction of the player. - Unity Documentation, https://docs.unity3d.com/ScriptReference/Quaternion.LookRotation.html
+
+2. Transform.eulerAngles.x - rotates the game object. -
+
+3. Mathf.Approximately - handles floats when being compared - Game Development, https://gamedev.stackexchange.com/questions/183469/mathf-approximately-should-i-use-it-for-what-cases
