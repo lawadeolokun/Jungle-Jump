@@ -8,7 +8,7 @@ public class DetectCollisions : MonoBehaviour
 
     void Start()
     {
-        keyManager = FindObjectOfType<KeyManager>();
+        keyManager = Object.FindFirstObjectByType<KeyManager>();
        
     }
 

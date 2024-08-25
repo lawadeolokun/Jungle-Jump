@@ -393,12 +393,14 @@
 "Assets/Free Wood Door Pack/Script/Door.cs"
 "Assets/Free Wood Door Pack/Script/FPSController.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/DestroyObject.cs"
 "Assets/Scripts/DetectCollisions.cs"
 "Assets/Scripts/KeyManager.cs"
 "Assets/Scripts/MoveForward.cs"
 "Assets/Scripts/ObstacleMovement.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SpawnManager.cs"
+"Assets/Scripts/SpawnManagerLvl2.cs"
 -langversion:9.0
 
 /deterministic
