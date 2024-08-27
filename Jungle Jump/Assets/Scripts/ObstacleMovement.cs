@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleMovement : MonoBehaviour
+public class Lvl1ObstacleMovement : MonoBehaviour
 {
     private float speed = 0.5f;
     private Transform player;
